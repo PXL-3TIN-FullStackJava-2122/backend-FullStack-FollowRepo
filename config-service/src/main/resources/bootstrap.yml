@@ -1,0 +1,9 @@
+server:
+  port: 8088
+
+spring:
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config, classpath:/common

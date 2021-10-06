@@ -18,7 +18,7 @@ spring:
           predicates:
             - Path=/employee/**
           filters:
-            - RewritePath=/employee/(?.*), /$\{path}
+            - RewritePath=/employee/(?<path>.*), /$\{path}
         - id: department-service
           uri: lb://department-service
           predicates:

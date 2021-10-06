@@ -10,9 +10,6 @@
 	<groupId>be.pxl.services</groupId>
 	<version>1.1</version>
 
-	<properties>
-		<java.version>1.8</java.version>
-	</properties>
 
 	<dependencyManagement>
 		<dependencies>
@@ -49,6 +46,17 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>jakarta.xml.bind</groupId>
+			<artifactId>jakarta.xml.bind-api</artifactId>
+			<version>2.3.2</version>
+		</dependency>
+		<!-- Runtime, com.sun.xml.bind module -->
+		<dependency>
+			<groupId>org.glassfish.jaxb</groupId>
+			<artifactId>jaxb-runtime</artifactId>
+			<version>2.3.2</version>
 		</dependency>
 	</dependencies>
 

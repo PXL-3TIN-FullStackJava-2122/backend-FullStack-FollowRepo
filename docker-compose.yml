@@ -1,0 +1,13 @@
+version: '2.1'
+services:
+  config:
+    build:
+      context: ./config-service
+    ports:
+      - "8088:8088"
+  
+  discovery:
+    build:
+      context: ./discovery-service
+    ports:
+      - "8061:8061"

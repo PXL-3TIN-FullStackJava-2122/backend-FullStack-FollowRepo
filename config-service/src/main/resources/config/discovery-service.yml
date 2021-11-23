@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: discovery
   client:
     registerWithEureka: false
     fetchRegistry: false
@@ -12,7 +12,7 @@ eureka:
 
 spring:
   zipkin:
-    base-url: http://localhost:9411/
+    base-url: http://zipkin:9411/
   sleuth:
     sampler:
       probability: 1.0

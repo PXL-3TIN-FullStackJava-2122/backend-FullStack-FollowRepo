@@ -11,3 +11,34 @@ services:
       context: ./discovery-service
     ports:
       - "8061:8061"
+  department:
+    build:
+      context: ./department-service
+    ports:
+      - "8092:8092"
+  employee:
+    build:
+      context: ./employee-service
+    ports:
+      - "8090:8090"
+      - "9090:9090"
+  organisation:
+    build:
+      context: ./organization-service
+    ports:
+      - "8091:8091"
+#  gateway:
+#    build:
+#      context: ./gateway-service
+#    ports:
+#      - "8060:8060"
+  zipkin:
+    build:
+      context: ./zipkin-server
+    ports:
+      - "9411:9411"
+  proxy:
+    build:
+      context: ./proxy-service
+    ports:
+      - "8060:8060"

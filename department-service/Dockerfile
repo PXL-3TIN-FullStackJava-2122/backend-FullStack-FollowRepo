@@ -7,4 +7,4 @@ RUN chmod +x ./wait.sh
 ENTRYPOINT [ "/bin/bash", "-c", "/wait.sh localhost:8088/actuator/health -- java -jar /app.jar" ]
 #CMD ["./wait.sh","-h" "localhost", "-p", "8088","--", "java", "-jar", "/app.jar", "--spring.profiles.active=native"]
 
-EXPOSE 8061
+EXPOSE 8092
